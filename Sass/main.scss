@@ -1,0 +1,42 @@
+@forward  './navbar';
+@forward './reset';
+@forward  './_hero';
+@forward  './_section1';
+
+.section-1{
+    width: calc(100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:100px auto;
+    height: 350px;
+    .section-1__content{
+       position: relative;
+       max-width: 900px;
+       margin: auto;
+       text-align: center;
+        h2{
+            font-size: 35px;
+            color: white;
+        }
+        p{
+            font-size: 18px;
+            line-height: 0.7cm;
+            margin-top: 25px;
+            color: white;
+            font-weight: 100;
+        }
+    }
+    .diagonal{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgb(70, 70, 209);
+        height: 100%;
+        padding: 5px;
+        z-index: -1;
+        transform:  skewY(5deg)
+    }
+}
